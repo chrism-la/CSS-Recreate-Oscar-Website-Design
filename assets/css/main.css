@@ -17,22 +17,37 @@ p {
 .main-content-card {
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
-/* specificity */
-/* class */
-/* inline id class element/tag*/
-/* 0, 0, 1, 0*/
-.card-content, .card-image {
+.card-content,
+.card-image {
     width: 50%;
     padding: 20px;
 }
 
-/* 0, 0, 1, 1 */
 .card-image img {
     width: 100%;
 }
 
+/* Footer CSS Section */
+
+
+.footer-main-container {
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.822);
+    color: #fff;
+}
+.logo-contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+.links-main-container{
+    display: flex;
+}
+.links-container{
+    margin-left: 25px;
+}
 
 @media (max-width: 600px) {
 
@@ -50,4 +65,15 @@ p {
         width: 100%;
         padding: 0;
     }
+
+    .card-content {
+        order: 1;
+    }
+    .logo-contact-container{
+        flex-direction: column;
+    }
+    .links-main-container{
+        flex-wrap: wrap;
+    }
+
 }
